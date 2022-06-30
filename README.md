@@ -1,4 +1,4 @@
-#Aboulous-Furniture-Website
+## Aboulous-Furniture-Website
 
 ## Features
  - [X] Home
@@ -11,7 +11,7 @@
      + Login
      + Register
 
-##Members:
+## Members:
 - Pham Thi Mai Vy
  - Nguyen Thi Ngoc Ngan
  - Nguyen Linh Nhi
