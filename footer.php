@@ -13,7 +13,7 @@
         <div class="box">
             <h3>extra links</h3>
             <a href="login.php">login</a>
-            <a href="register.php">register</a>
+            <a href="sign_up.php">register</a>
             <a href="orders.php">my orders</a>
             <a href="cart.php">my cart</a>
         </div>
