@@ -51,22 +51,12 @@ if(isset($_POST['submit'])){
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>login</title>
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></head>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <style>
-      .bg-color{
-         background-color: #92B4EC;
-      }
-   </style>
 
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
@@ -84,20 +74,17 @@ if(isset($message)){
 }
 ?>
    
-<div class="card mx-auto my-5 " style="width: 25rem;">
-   <div class="card-body mx-auto  ">
-      <section class="form-container">
+<section class="form-container">
 
-         <form action="" method="post">
-            <h3 class="text-center">LOGIN NOW</h3>
-            <div><input style="width: 100%;" type="email" name="email" class="box my-2" placeholder="enter your email" required></div>
-            <div><input style="width: 100%;" type="password" name="pass" class="box my-2" placeholder="enter your password" required></div>
-            <div><input style="width: 100%;" type="submit" class="btn  my-2 col bg-color" name="submit" value="login now"></div>
-            <p>don't have an account? <a href="register.php">register now</a></p>
-         </form>
-      </section>
-   </div>
-</div>
+   <form action="" method="post">
+      <h3>login now</h3>
+      <input type="email" name="email" class="box" placeholder="enter your email" required>
+      <input type="password" name="pass" class="box" placeholder="enter your password" required>
+      <input type="submit" class="btn" name="submit" value="login now">
+      <p>don't have an account? <a href="register.php">register now</a></p>
+   </form>
+
+</section>
 
 </body>
 </html>
