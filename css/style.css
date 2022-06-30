@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
 
 :root{
-   --pink:#e84393;
+   --navy:#92B4EC;
    --red:#c0392b;
-   --orange:#f39c12;
+   --yellow:#FFD24C;
    --black:#333;
    --white:#fff;
    --light-color:#666;
@@ -23,7 +23,7 @@
 }
 
 *::selection{
-   background-color: var(--pink);
+   background-color: var(--navy);
    color:var(--white);
 }
 
@@ -37,7 +37,7 @@
 }
 
 *::-webkit-scrollbar-thumb{
-   background-color: var(--pink);
+   background-color: var(--navy);
 }
 
 html{
@@ -104,7 +104,7 @@ section{
 }
 
 .btn{
-   background-color: var(--pink);
+   background-color: var(--navy);
 }
 
 .delete-btn{
@@ -112,7 +112,7 @@ section{
 }
 
 .option-btn{
-   background-color: var(--orange);
+   background-color: var(--yellow);
 }
 
 .btn:hover,
@@ -161,7 +161,7 @@ section{
 }
 
 .heading p a{
-   color:var(--pink);
+   color:var(--navy);
 }
 
 .heading p a:hover{
@@ -224,7 +224,7 @@ section{
 }
 
 .form-container form p a{
-   color:var(--pink);
+   color:var(--navy);
 }
 
 .form-container form p a:hover{
@@ -251,7 +251,7 @@ section{
 
 .header .flex .logo{
    font-size: 2.5rem;
-   color:var(--pink);
+   color:var(--navy);
 }
 
 .header .flex .navbar ul{
@@ -272,7 +272,7 @@ section{
 }
 
 .header .flex .navbar ul li a:hover{
-   background-color: var(--pink);
+   background-color: var(--navy);
    color:var(--white);
 }
 
@@ -301,7 +301,7 @@ section{
 }
 
 .header .flex .icons > *:hover{
-   color:var(--pink);
+   color:var(--navy);
 }
 
 .header .flex .icons span{
@@ -338,7 +338,7 @@ section{
 }
 
 .header .flex .account-box p span{
-   color:var(--pink);
+   color:var(--navy);
 }
 
 .header .flex .account-box .delete-btn{
@@ -347,7 +347,7 @@ section{
 
 .home{
    min-height: 60vh;
-   background:url(../images/home-bg.png) no-repeat;
+   background:url(../images/home-bg.jpg) no-repeat;
    background-size: cover;
    background-position: center;
    display: flex;
@@ -409,7 +409,7 @@ section{
 .products .box-container .box .price{
    font-size: 2rem;
    padding:1rem;
-   background-color: var(--pink);
+   background-color: var(--navy);
    color:var(--white);
    left:1rem;
 }
@@ -606,7 +606,7 @@ section{
 }
 
 .reviews .box-container .box .stars i{
-   color:var(--orange);
+   color:var(--yellow);
    font-size: 1.7rem;
    margin:0 .3rem;
 }
@@ -983,7 +983,7 @@ section{
 }
 
 .placed-orders .box-container .box p span{
-   color:var(--pink);
+   color:var(--navy);
 }
 
 
@@ -1019,13 +1019,13 @@ section{
 
 .footer .box-container a i,
 .footer .box-container p i{
-   color:var(--pink);
+   color:var(--navy);
    padding-right: 1rem;
 }
 
 .footer .box-container a:hover{
    text-decoration: underline;
-   color:var(--pink);
+   color:var(--navy);
 }
 
 .footer .credit{
@@ -1038,7 +1038,7 @@ section{
 }
 
 .footer .credit span{
-   color:var(--pink);
+   color:var(--navy);
 }
 
 
