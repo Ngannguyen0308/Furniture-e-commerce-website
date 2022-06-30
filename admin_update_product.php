@@ -26,7 +26,7 @@ if(isset($_POST['update_product'])){
    $old_image = $_POST['update_p_image'];
    
    if(!empty($image)){
-      if($image_size > 2000000){
+      if($image_size > 1000000){
          $message[] = 'image file size is too large!';
       }else{
          mysqli_query($conn, "UPDATE `products` SET image = '$image' WHERE id = '$update_p_id'") or die('query failed');
@@ -55,6 +55,14 @@ if(isset($_POST['update_product'])){
 
    <!-- custom admin css file link  -->
    <link rel="stylesheet" href="css/admin_style.css">
+
+   <style>
+      .show-products .box-container .box .image{
+         height: 40rem;
+         width: 100%;
+         margin-bottom: .5rem;
+      }
+   </style>
 
 </head>
 <body>

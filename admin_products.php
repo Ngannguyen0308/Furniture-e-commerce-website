@@ -28,7 +28,7 @@ if(isset($_POST['add_product'])){
       $insert_product = mysqli_query($conn, "INSERT INTO `products`(name, details, price, image) VALUES('$name', '$details', '$price', '$image')") or die('query failed');
 
       if($insert_product){
-         if($image_size > 2000000){
+         if($image_size > 1000000){
             $message[] = 'image size is too large!';
          }else{
             move_uploaded_file($image_tmp_name, $image_folter);
@@ -60,13 +60,21 @@ if(isset($_GET['delete'])){
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>products</title>
+   <title>products page</title>
 
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
    <!-- custom admin css file link  -->
    <link rel="stylesheet" href="css/admin_style.css">
+
+   <style>
+      .show-products .box-container .box .image{
+         height: 40rem;
+         width: 100%;
+         margin-bottom: .5rem;
+      }
+   </style>
 
 </head>
 <body>

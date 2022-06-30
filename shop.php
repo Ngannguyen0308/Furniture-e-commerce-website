@@ -66,23 +66,31 @@ if(isset($_POST['add_to_cart'])){
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>shop</title>
+   <title>shop page</title>
 
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-   <!-- custom admin css file link  -->
+   <!-- custom admin css/bootstrap file link  -->
    <link rel="stylesheet" href="css/style.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+   <style>
+    .btn{
+        background-color: var(--pink);
+        font-size: 20px;
+    }
+   </style>
 
 </head>
 <body>
    
 <?php @include 'header.php'; ?>
 
-<section class="heading">
-    <h3>our shop</h3>
-    <p> <a href="home.php">home</a> / shop </p>
-</section>
+<div class="text-center" style="margin-top: 5%;">    
+    <h1>OUR SHOP</h1>
+    <p class="fs-2"><a href="home.php" class="link-danger">Home</a> / shop</p>
+</div>
 
 <section class="products">
 
@@ -127,6 +135,8 @@ if(isset($_POST['add_to_cart'])){
 <?php @include 'footer.php'; ?>
 
 <script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
 
 </body>
 </html>

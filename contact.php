@@ -36,7 +36,7 @@ if(isset($_POST['send'])){
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>contact</title>
+   <title>contact page</title>
 
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -44,15 +44,18 @@ if(isset($_POST['send'])){
    <!-- custom admin css file link  -->
    <link rel="stylesheet" href="css/style.css">
 
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+
 </head>
 <body>
    
 <?php @include 'header.php'; ?>
 
-<section class="heading">
-    <h3>contact us</h3>
-    <p> <a href="home.php">home</a> / contact </p>
-</section>
+<div class="text-center" style="margin-top: 5%;">
+    <h1>CONTACT US!</h1>
+    <p class="fs-2"><a href="home.php" class="link-danger">Home</a> / contact</p>
+</div>
 
 <section class="contact">
 
@@ -62,7 +65,7 @@ if(isset($_POST['send'])){
         <input type="email" name="email" placeholder="enter your email" class="box" required>
         <input type="number" name="number" placeholder="enter your number" class="box" required>
         <textarea name="message" class="box" placeholder="enter your message" required cols="30" rows="10"></textarea>
-        <input type="submit" value="send message" name="send" class="btn">
+        <input type="submit" value="send message" name="send" class="btn btn-outline-danger" style="font-size: 13px">
     </form>
 
 </section>
@@ -75,6 +78,8 @@ if(isset($_POST['send'])){
 <?php @include 'footer.php'; ?>
 
 <script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
 
 </body>
 </html>
