@@ -38,20 +38,12 @@ if(isset($_POST['submit'])){
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>register</title>
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></head>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <style>
-      .bg-color{
-         background-color: #92B4EC;
-      }
-   </style>
+
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
@@ -69,22 +61,19 @@ if(isset($message)){
 }
 ?>
    
-<div class="card mx-auto my-5 " style="width: 25rem;">
-  <div class="card-body mx-auto  ">
-  <section class="form-container">
-         <form action="" method="post">
-         <h3 class="text-center">REGISTER NOW</h3>
-         <div><input style="width: 100%;" type="text" name="name" class="box my-2" placeholder="enter your username" required></div>
-         <div><input style="width: 100%;" type="email" name="email" class="box my-2" placeholder="enter your email" required></div>
-         <div><input style="width: 100%;" type="password" name="pass" class="box my-2" placeholder="enter your password" required></div>
-         <div><input style="width: 100%;" type="password" name="cpass" class="box my-2" placeholder="confirm your password" required></div>
-         <div><button type="submit" class="btn bg-color my-2 col" name="submit " value="register now">Register now</div>
-         <p>already have an account? <a href="login.php">login now</a></p>
-      </form>
-   </section>
-  </div>
-</div>
+<section class="form-container">
 
+   <form action="" method="post">
+      <h3>register now</h3>
+      <input type="text" name="name" class="box" placeholder="enter your username" required>
+      <input type="email" name="email" class="box" placeholder="enter your email" required>
+      <input type="password" name="pass" class="box" placeholder="enter your password" required>
+      <input type="password" name="cpass" class="box" placeholder="confirm your password" required>
+      <input type="submit" class="btn" name="submit" value="register now">
+      <p>already have an account? <a href="login.php">login now</a></p>
+   </form>
+
+</section>
 
 </body>
 </html>
